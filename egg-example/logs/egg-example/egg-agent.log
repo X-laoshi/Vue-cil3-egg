@@ -1,0 +1,56 @@
+2020-05-16 17:53:09,784 INFO 4552 [egg:logger] init all loggers with options: {"dir":"E:\\egg-example\\logs\\egg-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-05-16 17:53:09,790 INFO 4552 [egg:core] dump config after load, 3ms
+2020-05-16 17:53:10,012 INFO 4552 [egg-watcher] Start watching: ["E:\\egg-example\\app","E:\\egg-example\\config","E:\\egg-example\\mocks","E:\\egg-example\\mocks_proxy","E:\\egg-example\\app.js"]
+2020-05-16 17:53:10,012 INFO 4552 [egg-watcher] Start watching: "E:\\egg-example\\app"
+2020-05-16 17:53:10,012 INFO 4552 [egg-watcher] Start watching: "E:\\egg-example\\config"
+2020-05-16 17:53:10,012 INFO 4552 [egg-watcher] Start watching: "E:\\egg-example\\mocks"
+2020-05-16 17:53:10,012 INFO 4552 [egg-watcher] Start watching: "E:\\egg-example\\mocks_proxy"
+2020-05-16 17:53:10,013 INFO 4552 [egg-watcher] Start watching: "E:\\egg-example\\app.js"
+2020-05-16 17:53:10,013 INFO 4552 [egg-watcher:agent] watcher start success
+2020-05-16 17:53:10,022 INFO 4552 [egg:core] dump config after ready, 6ms
+2020-05-16 17:53:12,465 INFO 4552 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"E:\\egg-example\\app\\public","stat":{"dev":2351708673,"mode":16822,"nlink":1,"uid":0,"gid":0,"rdev":0,"blksize":4096,"ino":281474976746623,"size":0,"blocks":0,"atimeMs":1589622792463.0337,"mtimeMs":1589622792463.0337,"ctimeMs":1589622792463.0337,"birthtimeMs":1589622792463.0337,"atime":"2020-05-16T09:53:12.463Z","mtime":"2020-05-16T09:53:12.463Z","ctime":"2020-05-16T09:53:12.463Z","birthtime":"2020-05-16T09:53:12.463Z"},"remove":false,"isDirectory":true,"isFile":false}
+2020-05-16 17:55:38,456 INFO 1164 [egg:logger] init all loggers with options: {"dir":"E:\\egg-example\\logs\\egg-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-05-16 17:55:38,462 INFO 1164 [egg:core] dump config after load, 3ms
+2020-05-16 17:55:38,492 INFO 1164 [egg-watcher] Start watching: ["E:\\egg-example\\app","E:\\egg-example\\config","E:\\egg-example\\mocks","E:\\egg-example\\mocks_proxy","E:\\egg-example\\app.js"]
+2020-05-16 17:55:38,492 INFO 1164 [egg-watcher] Start watching: "E:\\egg-example\\app"
+2020-05-16 17:55:38,493 INFO 1164 [egg-watcher] Start watching: "E:\\egg-example\\config"
+2020-05-16 17:55:38,493 INFO 1164 [egg-watcher] Start watching: "E:\\egg-example\\mocks"
+2020-05-16 17:55:38,493 INFO 1164 [egg-watcher] Start watching: "E:\\egg-example\\mocks_proxy"
+2020-05-16 17:55:38,493 INFO 1164 [egg-watcher] Start watching: "E:\\egg-example\\app.js"
+2020-05-16 17:55:38,493 INFO 1164 [egg-watcher:agent] watcher start success
+2020-05-16 17:55:38,502 INFO 1164 [egg:core] dump config after ready, 4ms
+2020-05-16 17:58:14,535 ERROR 1164 nodejs.ClusterClientNoResponseError: client no response in 79389ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (E:\egg-example\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 1164
+hostname: DESKTOP-BRCP019
+
+2020-05-16 17:58:14,741 WARN 1164 [agent:development] reload worker because E:\egg-example\config\config.default.js rename
+2020-05-16 17:58:14,538 ERROR 1164 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "E:\\egg-example\\app\\public"
+name: "EPERMError"
+pid: 1164
+hostname: DESKTOP-BRCP019
+
+2020-05-16 17:58:14,539 INFO 1164 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"E:\\egg-example\\app\\public","remove":true,"isDirectory":false,"isFile":false}
+2020-05-16 17:58:14,540 INFO 1164 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"E:\\egg-example\\config\\config.default.js.js","remove":true,"isDirectory":false,"isFile":false}
+2020-05-16 17:58:14,540 INFO 1164 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"E:\\egg-example\\config\\config.default.js","stat":{"dev":2351708673,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"blksize":4096,"ino":281474976746610,"size":26,"blocks":0,"atimeMs":1589622753703.9124,"mtimeMs":1589622753703.9124,"ctimeMs":1589623085277.9246,"birthtimeMs":1589622659678.183,"atime":"2020-05-16T09:52:33.704Z","mtime":"2020-05-16T09:52:33.704Z","ctime":"2020-05-16T09:58:05.278Z","birthtime":"2020-05-16T09:50:59.678Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-05-16 17:58:15,404 INFO 1164 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"E:\\egg-example\\app\\public","stat":{"dev":2351708673,"mode":16822,"nlink":1,"uid":0,"gid":0,"rdev":0,"blksize":4096,"ino":281474976746629,"size":0,"blocks":0,"atimeMs":1589623095404.0852,"mtimeMs":1589623095404.0852,"ctimeMs":1589623095404.0852,"birthtimeMs":1589623095404.0852,"atime":"2020-05-16T09:58:15.404Z","mtime":"2020-05-16T09:58:15.404Z","ctime":"2020-05-16T09:58:15.404Z","birthtime":"2020-05-16T09:58:15.404Z"},"remove":false,"isDirectory":true,"isFile":false}
+2020-05-16 17:58:15,532 WARN 1164 [ClusterClient:Connection] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-05-16 17:58:24,583 INFO 19980 [egg:logger] init all loggers with options: {"dir":"E:\\egg-example\\logs\\egg-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-05-16 17:58:24,589 INFO 19980 [egg:core] dump config after load, 3ms
+2020-05-16 17:58:24,620 INFO 19980 [egg-watcher] Start watching: ["E:\\egg-example\\app","E:\\egg-example\\config","E:\\egg-example\\mocks","E:\\egg-example\\mocks_proxy","E:\\egg-example\\app.js"]
+2020-05-16 17:58:24,620 INFO 19980 [egg-watcher] Start watching: "E:\\egg-example\\app"
+2020-05-16 17:58:24,620 INFO 19980 [egg-watcher] Start watching: "E:\\egg-example\\config"
+2020-05-16 17:58:24,620 INFO 19980 [egg-watcher] Start watching: "E:\\egg-example\\mocks"
+2020-05-16 17:58:24,620 INFO 19980 [egg-watcher] Start watching: "E:\\egg-example\\mocks_proxy"
+2020-05-16 17:58:24,620 INFO 19980 [egg-watcher] Start watching: "E:\\egg-example\\app.js"
+2020-05-16 17:58:24,621 INFO 19980 [egg-watcher:agent] watcher start success
+2020-05-16 17:58:24,630 INFO 19980 [egg:core] dump config after ready, 5ms

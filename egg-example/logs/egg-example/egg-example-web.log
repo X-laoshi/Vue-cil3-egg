@@ -1,0 +1,30 @@
+2020-05-16 17:53:19,578 ERROR 3184 [-/::1/-/19ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (E:\egg-example\node_modules\egg\lib\application.js:266:15)
+    at Object.get cookies [as cookies] (E:\egg-example\node_modules\egg\app\extend\context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (E:\egg-example\node_modules\egg-security\app\extend\context.js:91:35)
+    at Object.ensureCsrfSecret (E:\egg-example\node_modules\egg-security\app\extend\context.js:104:13)
+    at csrf (E:\egg-example\node_modules\egg-security\lib\middlewares\csrf.js:15:11)
+    at dispatch (E:\egg-example\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at E:\egg-example\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (E:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (E:\egg-example\node_modules\koa-session\index.js:41:13)
+    at dispatch (E:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 3184
+hostname: DESKTOP-BRCP019
+
+2020-05-16 17:58:14,639 ERROR 12680 [-/::1/-/142563ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (E:\egg-example\node_modules\egg\lib\application.js:266:15)
+    at Object.get cookies [as cookies] (E:\egg-example\node_modules\egg\app\extend\context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (E:\egg-example\node_modules\egg-security\app\extend\context.js:91:35)
+    at Object.ensureCsrfSecret (E:\egg-example\node_modules\egg-security\app\extend\context.js:104:13)
+    at csrf (E:\egg-example\node_modules\egg-security\lib\middlewares\csrf.js:15:11)
+    at dispatch (E:\egg-example\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at E:\egg-example\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (E:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (E:\egg-example\node_modules\koa-session\index.js:41:13)
+    at dispatch (E:\egg-example\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 12680
+hostname: DESKTOP-BRCP019
+
